@@ -1,0 +1,9 @@
+#!/bin/bash
+
+BUILD_DIR=$1
+
+if [ -f "${BUILD_DIR}/hello.txt" ]; then
+  echo "hello found"
+  exit 0
+fi
+exit 1
